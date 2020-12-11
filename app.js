@@ -10,21 +10,11 @@ new Vue({
         y: 0
     },
     methods: {
-        greet: function(time){
-            return "Good " + time + " " + this.name;
+        logName: function(){
+            console.log("You entered your name")
         },
-        add: function(numYears){
-            this.age += numYears;
-        },
-        subtract: function(numYears){
-            this.age -= numYears;
-        },
-        updateXY: function(event){
-            this.x = event.offsetX;
-            this.y = event.offsetY;
-        },
-        click: function(){
-            alert("you clicked a target element")
+        logAge: function(){
+            console.log("You entered your age")
         }
     }
 });
